@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=Bebas+Neue&family=Bungee&family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Keyboard&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&family=Ruslan+Display&family=Russo+One&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+  </style>
+</head>
+
+
+
+<body>
+
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <div id="site-content" style="opacity: 0;">
+    <header class="header">
+      <nav class="nav nav-left">
+        <ul>
+          <li><a class="btn-outline" href="#about">О нас</a></li>
+          <li><a href="#catalog_goods">Направления</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo">
+        <img style="width: 120px; height: 100px;" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/travel-logo%2Ctravel-agency-logo%2Ctravel-%26-tour-design-template-f938bcb1cb3c3aa5e0f4aa63296ddaeb_screen.jpg?ts=1672702637" alt="Логотип">
+      </div>
+
+      <nav class="nav nav-right">
+        <ul>
+          <li><a href="#tours">Туры</a></li>
+          <li><a href="#interesting">Интересное</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="content">
+
+   <div class="hero">
+  <iframe 
+    src="https://www.youtube.com/embed/zen6E8NRKeU?autoplay=1&loop=1&playlist=zen6E8NRKeU&controls=0&showinfo=0&modestbranding=1&mute=1&rel=0"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+  </div>
+      <section class="about-section" id="about">
+        <div class="about-bg"></div>
+
+        <div class="about-overlay">
+          <div class="about-content">
+            <h1>О нас</h1>
+            <p class="subtitle">Мы создаём путешествия, которые становятся частью вашей истории</p>
+
+            <p class="description">
+              Наша команда объединяет страсть к открытиям, внимание к деталям и любовь к людям.
+              Мы разрабатываем маршруты, где каждая остановка — эмоция, каждый день — новое вдохновение.
+              Путешествуйте с нами, и вы увидите мир в его настоящих красках.
+            </p>
+
+            <a href="#catalog_goods" class="btn-gold">Посмотреть направления</a>
+          </div>
+
+          <div class="about-photo">
+            <img src="https://585327db-1738-4319-8825-b4d66fe3e73d.selstorage.ru/f711a577-5e2d-4c2d-be33-a9e9f3de0299.jpg" alt="Наша команда в путешествии">
+          </div>
+        </div>
+      </section>
+
+      <section class="hot-tours">
+        <h2 class="section-title">Горячие туры</h2>
+
+
+        <div id="tours" class="tour" data-location="Antalya, Turkey" style="--bg:url('https://pibig.info/uploads/posts/2024-03/1709552416_pibig-info-p-kemer-antaliya-oboi-10.jpg')">
+          <div class="tour-content">
+            <h3>🇹🇷 Турция — Анталия</h3>
+            <p>Солнце, море и бесконечное лето. All Inclusive в лучших отелях побережья.</p>
+            <button class="btn-map"> Смотреть на карте</button>
+          </div>
+        </div>
+
+
+        <div class="tour" data-location="Dubai, UAE" style="--bg:url('https://i2.wp.com/wallpapertag.com/wallpaper/full/a/0/0/232267-most-popular-4k-desktop-wallpapers-3840x2160.jpg')">
+          <div class="tour-content">
+            <h3>🇦🇪 ОАЭ — Дубай</h3>
+            <p>Город будущего, небоскрёбы и пустыня, где роскошь встречает восток.</p>
+            <button class="btn-map"> Смотреть на карте</button>
+          </div>
+        </div>
+
+
+        <div class="tour" data-location="Palawan, Philippines" style="--bg:url('https://media.timeout.com/images/105326826/image.jpg')">
+          <div class="tour-content">
+            <h3>🇵🇭 Филиппины — Палаван</h3>
+            <p>Белоснежные пляжи, лазурное море и ощущение рая без фильтров.</p>
+            <button class="btn-map"> Смотреть на карте</button>
+          </div>
+        </div>
+      </section>
+
+
+      <div id="mapModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe id="mapFrame" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+
+
+
+      <section class="destinations" id="catalog_goods">
+        <h2 class="section-title">Популярные направления</h2>
+
+        <div class="slider">
+          <div class="slide active" style="background-image: url('https://oceanjar-new.s3.ap-south-1.amazonaws.com/Manggis_banner_1a4d81fecf.jpeg')">
+            <div class="slide-content">
+              <h3>Бали, Индонезия</h3>
+              <p>Райский остров, где джунгли встречаются с океаном. Идеален для души и вдохновения.</p>
+              <button class="btn-slide">Подробнее</button>
+            </div>
+          </div>
+
+          <div class="slide" style="background-image: url('https://www.qaztourism.kz/upload/iblock/85c/85ce88b2a2bab58967e37dbe80a5ae2d.jpg')">
+            <div class="slide-content">
+              <h3>Казахстан, Алматы</h3>
+              <p>Город у подножия гор. Где воздух пахнет свободой, а рассветы сияют ледяным светом.</p>
+              <button class="btn-slide">Подробнее</button>
+            </div>
+          </div>
+
+          <div class="slide" style="background-image: url('https://avatars.mds.yandex.net/i?id=d08483456c58ab76dab5891e1c1b5220_l-3580534-images-thumbs&n=13')">
+            <div class="slide-content">
+              <h3>Египет, Каир</h3>
+              <p>Золотое солнце над пирамидами, величие древности и магия Нила.</p>
+              <button class="btn-slide">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <span class="prev">❮</span>
+          <span class="next">❯</span>
+        </div>
+      </section>
+
+      <section class="catalog">
+
+        <div class="cards">
+          <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=4e00ef976e44fca9a70bf31a613a677f_l-10126262-images-thumbs&n=13" alt="Мадрид">
+            <h3>Мадрид</h3>
+          </div>
+          <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=8813a05f4ad6bf73c6c0ba8c35eb8bb8_l-5235709-images-thumbs&n=13" alt="Рио-де-Жанейро">
+            <h3>Рио-де-Жанейро</h3>
+          </div>
+          <div class="card">
+            <img src="https://image.cnbcfm.com/api/v1/image/107230098-1682362498475-gettyimages-1208124099-tae_4055getty.jpeg?v=1686526986" alt="Токио">
+            <h3>Токио</h3>
+          </div>
+          <div class="card">
+            <img src="https://585327db-1738-4319-8825-b4d66fe3e73d.selstorage.ru/8d55ceaa-55c0-4732-82eb-32b9d85610de.jpg" alt="Москва">
+            <h3>Москва</h3>
+          </div>
+          <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=a0367a6b4ca31b7827a21fd415ddcc12_l-5227781-images-thumbs&n=13" alt="Чикаго">
+            <h3>Чикаго</h3>
+          </div>
+          <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=f3ed043068d51d7d82762283cc81da44_l-5372356-images-thumbs&n=13" alt="Ташкент">
+            <h3>Ташкент</h3>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Париж">
+            <h3>Париж</h3>
+          </div>
+          <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=496bfe039747a7b7d5cf1bbd2b58d166_l-7979832-images-thumbs&n=13" alt="Нью-Йорк">
+            <h3>Нью-Йорк</h3>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="interesting" class="interesting">
+        <h2>Интересное</h2>
+        <div class="counter-container">
+          <p>Мы перевозим </p>
+          <h1 id="passengerCounter">0</h1>
+          <p>пассажиров ежегодно </p>
+        </div>
+      </section>
+
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Забронировать тур</h2>
+          <p>Оставьте заявку, и мы свяжемся с вами в ближайшее время!</p>
+          <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+
+      <section id="contact" class="contact">
+        <h2>Заинтересовались?</h2>
+        <p>Оставьте заявку, и мы подберём для вас лучший тур!</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Имя" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Ваше сообщение"></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+
+
+
+    </main>
+  </div>
+
+
+</body>
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+
+    <div class="footer-logo">
+      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/travel-logo%2Ctravel-agency-logo%2Ctravel-%26-tour-design-template-f938bcb1cb3c3aa5e0f4aa63296ddaeb_screen.jpg?ts=1672702637" alt="Логотип">
+      <p>© Все права защищены</p>
+    </div>
+
+    <nav class="footer-menu">
+      <a href="#about">О нас</a>
+      <a href="">Направления</a>
+      <a href="">Туры</a>
+      <a href="">Интересное</a>
+    </nav>
+
+    <div class="footer-contacts">
+      <p>Телефон: <a href="tel:+77001234567">+7 700 123 45 67</a></p>
+      <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      <p>Адрес: Казахстан, Алматы</p>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/?hl=ru">Instagram</a>
+      <a href="https://web.whatsapp.com/">WhatsApp</a>
+      <a href="https://web.telegram.org/">Telegram</a>
+    </div>
+
+  </div>
+
+
+
+
+</footer>
+
+</body>
+
+
+</html>
